@@ -20,12 +20,12 @@ public class MathUtilTest {
     public static Object[][] initData() {
         return new Integer[][]{
             //{input, expected}
-            {1, 1}, {2, 2}, {5, 120}, {6, 120}
+            {1, 1}, {2, 2}, {5, 120}, {6, 720}
         };
     }
 
     @ParameterizedTest
-    @MethodSource(value = "initData") //tên hàm cung câp data, ngâm dinh thú tu
+    @MethodSource(value = "initData") //tên hàm cung câp data, ngâm dinh thú t
     public void testGetFactorialGivenRightArgumentReturnsWell(int input, long expected) {
         assertEquals(expected, getFactorial(input));
     }
